@@ -1,0 +1,97 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(240, 240, 240);
+}
+
+label {
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  font-size: 25px;
+}
+
+label select {
+  vertical-align: middle;
+  width: 70px;
+  text-align: center;
+  font-size: 15px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.generate-meme-btn {
+  display: block;
+  margin: 20px auto;
+  outline: none;
+  border: none;
+  padding: 10px 25px;
+  border-left: 5px solid rgb(208, 47, 47);
+  border-right: 5px solid rgb(208, 47, 47);
+  font-size: 20px;
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+.generate-meme-btn:hover {
+  padding: 10px 35px;
+  border-left: 10px solid rgb(208, 47, 47);
+  border-right: 10px solid rgb(208, 47, 47);
+  letter-spacing: 3px;
+}
+
+.meme-container {
+  text-align: center;
+  margin-top: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.meme-detail-container {
+  width: 30%;
+  height: 100%;
+}
+
+.title {
+  margin-bottom: 20px;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.author {
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 750px) {
+  .meme-container {
+    padding: 20px;
+  }
+
+  .meme-detail-container {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .meme-detail-container {
+    width: 100%;
+  }
+}
